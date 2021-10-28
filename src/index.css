@@ -1,51 +1,14 @@
-ul {
-  padding: 0;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-li {
-  list-style: none;
-  margin: 0;
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
-
-a {
-  text-decoration: none;
-}
-
-.app-wrapper {
-  display: grid;
-  max-width: 1024px;
-  margin: auto;
-
-  grid-template-areas:
-    "h h"
-    "n c";
-  grid-template-rows: 60xp 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
-}
-
-.header {
-  background-color: #13CE66;
-  grid-area: h;
-}
-
-.nav {
-  background-color: #13CE66;
-  grid-area: n;
-  height: 100hw;
-}
-
-.content {
-  background-color: cadetblue;
-  grid-area: c;
-}
-
-.back-img {}
-
-.avatar {}
-
-.info {}
-
-.my-posts {}
-
-.posts {}

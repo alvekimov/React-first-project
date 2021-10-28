@@ -1,29 +1,30 @@
 import React from 'react';
+import s from './Profile.module.css'
 
 const Profile = () => {
   return (
-    <main className='content'>
-      <div className='back-img'>
+    <main className={s.content}>
+      <div className={s.backImg}>
         <img src="https://sebweo.com/images/landshaft-bernskikh-alp-v-yasniy-den.jpg" alt="nature" />
       </div>
-      <div className='avatar-description'>
-        <div className='avatar'>
+      <div className={s.avatarDescription}>
+        <div className={s.avatar}>
           avatar
         </div>
-        <div className='description'>
+        <div className={s.description}>
           description
         </div>
       </div>
-      <div className='my-posts'>
+      <div className={s.myPosts}>
         my-posts
-        <div className="new-post">
+        <div className={s.newPost}>
           new-post
         </div>
       </div>
-      <div className='posts'>
-        <div className="post">Post 1</div>
-        <div className="post">Post 2</div>
-        <div className="post">Post 3</div>
+      <div className={s.posts}>
+        <div className={`${s.post} + ${s.active}`}>Post 1</div>
+        <div className={`${s.post} + ${s.active}`}>Post 2</div>
+        <div className={s.post}>Post 3</div>
       </div>
     </main>
   );

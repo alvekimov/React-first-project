@@ -1,16 +1,21 @@
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .app-wrapper {
-  display: grid;
-  max-width: 1024px;
-  margin: auto;
+    display: grid;
+    max-width: 1024px;
+    margin: auto;
 
-  grid-template-areas:
+    grid-template-areas:
     "h h"
     "n c";
-  grid-template-rows: 60xp 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 10px;
+    grid-template-rows: 60xp 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+}
+
+.app-wrapper-content {
+    background-color: cadetblue;
+    grid-area: c;
 }

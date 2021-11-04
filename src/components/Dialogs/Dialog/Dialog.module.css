@@ -1,0 +1,28 @@
+.dialogItem {
+    justify-items: center;
+    margin-bottom: 15px;
+
+}
+
+.dialogItem a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.name{
+    padding-top: 5px;
+}
+
+.circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: solid 1px black;
+    border-radius: 15px;
+    margin-right: 15px;
+}
+
+.dialogItem a.active {
+    color: gold;
+}

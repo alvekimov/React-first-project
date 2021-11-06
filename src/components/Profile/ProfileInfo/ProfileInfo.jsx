@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './ProfileInfo.module.css'
+import s from './ProfileInfo.module.css';
 
 const ProfileInfo = (props) => {
 	return (
@@ -18,6 +18,6 @@ const ProfileInfo = (props) => {
 
 	)
 		;
-}
+};
 
 export default ProfileInfo;

@@ -1,21 +1,21 @@
-.profileInfo a{
+.profileInfo a {
     margin-right: 30px;
     display: grid;
     grid-template-columns: 5fr 5fr;
     max-height: 50px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 2fr 10fr;
     padding: 30px 0 15px 15px;
 }
 
-.backImg{
+.backImg {
 
 }
 
-.name{
+.name {
     display: flex;
     align-items: center
 }

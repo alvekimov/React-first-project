@@ -9,8 +9,7 @@ const ProfileInfo = (props) => {
 			</div>
 			<div className={s.container}>
 				<a>
-					<div className={s.circle}><img src={'./img/' + props.id} alt=''/></div>
-					<div className={s.name}>{props.name}</div>
+					avatar + discription
 				</a>
 				<div>{props.discription}</div>
 			</div>

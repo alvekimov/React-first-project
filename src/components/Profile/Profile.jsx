@@ -3,14 +3,19 @@ import MyPosts from './MyPosts/MyPosts';
 import s from './Profile.module.css';
 import ProfileInfo from './ProfileInfo/ProfileInfo';
 
-const Profile = () => {
+const Profile = (props) => {
+
+	let postData = [
+		{id: 1, post: 'Hey, why nobody love me?', likesCount: 15},
+		{id: 2, post: 'It\'s my first message', likesCount: 20},
+		{id: 3, post: 'Do you like this?', likesCount: 3},
+		{id: 4, post: 'Yo', likesCount: 3}
+	];
+
 	return (
 		<main className={s.content}>
-			<ProfileInfo name='Alex'
-			             discription='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem, beatae deserunt dicta doloremque
-			dolorum facilis id magni, mollitia nam nemo nobis pariatur quasi quia quibusdam repudiandae sint suscipit
-			velit!'/>
-			<MyPosts/>
+			<ProfileInfo/>
+			<MyPosts postData={postData}/>
 		</main>
 	);
 };

@@ -4,8 +4,8 @@ import Post from './Post/Post';
 
 const MyPosts = (props) => {
 
-	let postMessage = props.postData.map((post) => {
-		return <Post message={post.post} count={post.likesCount}/>;
+	let postMessage = props.posts.map((p) => {
+		return <Post message={p.post} count={p.likesCount}/>;
 	});
 
 	return (
@@ -17,7 +17,7 @@ const MyPosts = (props) => {
 					<button>add post</button>
 				</div>
 			</div>
-			<div className={s.posts}>
+			<div>
 				{postMessage}
 			</div>
 		</div>

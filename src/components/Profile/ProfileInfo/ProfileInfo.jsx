@@ -8,15 +8,10 @@ const ProfileInfo = (props) => {
 				<img src='https://sebweo.com/images/landshaft-bernskikh-alp-v-yasniy-den.jpg' alt='nature'/>
 			</div>
 			<div className={s.container}>
-				<a>
-					avatar + discription
-				</a>
-				<div>{props.discription}</div>
+				avatar + discription
 			</div>
 		</div>
-
-	)
-		;
+	);
 };
 
 export default ProfileInfo;

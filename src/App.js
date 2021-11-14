@@ -16,11 +16,22 @@ const App = (props) => {
 				<Header/>
 				<NavBar/>
 				<div className='app-wrapper-content'>
-					<Route /*{exact}*/ path='/dialogs' component={Dialogs }/>
-					<Route /*{exact}*/ path='/profile' component={Profile}/>
-					<Route /*{exact}*/ path='/news' component={News}/>
-					<Route /*{exact}*/ path='/music' component={Music}/>
-					<Route /*{exact}*/ path='/settings' component={Settings}/>
+					<Route /*{exact}*/ path='/dialogs'>
+						<Dialogs dialogs={props.state.dialogsPage.dialogs}
+						         messages={props.state.dialogsPage.messages}/>
+					</Route>
+					<Route /*{exact}*/ path='/profile'>
+						<Profile posts={props.state.profilePage.posts}/>
+					</Route>
+					<Route /*{exact}*/ path='/news'>
+						<News/>
+					</Route>
+					<Route /*{exact}*/ path='/music'>
+						<Music/>
+					</Route>
+					<Route /*{exact}*/ path='/settings'>
+						<Settings/>
+					</Route>
 				</div>
 			</div>
 		</BrowserRouter>
@@ -28,3 +39,7 @@ const App = (props) => {
 };
 
 export default App;
+
+
+//<Route /*{exact}*/ path='/dialogs' render={() => <Dialogs dialogs={props.dialogs} messages={props.messages}/>}/>
+// <Route /*{exact}*/ path='/profile' render={() => <Profile postData={props.postData}/>}/>

@@ -14,11 +14,10 @@ const NewMessage = (props) => {
 			<div>
 				<textarea cols='100' rows='5' ref={newMessageElement}></textarea>
 			</div>
-			<div className='newMessage'>
+			<div className={s.newMessage}>
 				<button onClick={addMessage}>add new message</button>
 			</div>
 		</div>
-
 	);
 };
 

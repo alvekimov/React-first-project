@@ -2,6 +2,7 @@ import React from 'react';
 import s from './MyPosts.module.css';
 import Post from './Post/Post';
 
+
 const MyPosts = (props) => {
 
 	let postMessage = props.posts.map((p) => {
@@ -10,9 +11,10 @@ const MyPosts = (props) => {
 
 	let newPostElement = React.createRef();
 
-	let addPost = () => {
+	let addPosts = () => {
 		let text = newPostElement.current.value;
-		alert(text);
+		props.addPost(text);
+		newPostElement.current.value = '';
 	};
 
 	return (
@@ -20,11 +22,10 @@ const MyPosts = (props) => {
 			<h3>My posts</h3>
 			<div className={s.newPost}>
 				<div>
-					<textarea cols='30' rows='5' ref={newPostElement}></textarea>
+					<textarea cols='100' rows='5' ref={newPostElement}></textarea>
 				</div>
 				<div>
-					<button onClick={addPost}>add post
-					</button>
+					<button onClick={addPosts}>add post</button>
 				</div>
 			</div>
 			<div>

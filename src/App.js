@@ -19,16 +19,13 @@ const App = (props) => {
 					<Dialogs dialogs={props.state.dialogsPage.dialogs}
 					         messages={props.state.dialogsPage.messages}
 					         newMessageText={props.state.dialogsPage.newMessageText}
-					         addMessage={props.addMessage}
-					         updateNewMessageText={props.updateNewMessageText}
-
+					         dispatch={props.dispatch}
 					/>
 				</Route>
 				<Route /*{exact}*/ path='/profile'>
 					<Profile posts={props.state.profilePage.posts}
-					         addPost={props.addPost}
-							 newPostText={props.state.profilePage.newPostText}
-							 updateNewPostText={props.updateNewPostText}
+					         newPostText={props.state.profilePage.newPostText}
+					         dispatch={props.dispatch}
 					/>
 				</Route>
 				<Route /*{exact}*/ path='/news'>
